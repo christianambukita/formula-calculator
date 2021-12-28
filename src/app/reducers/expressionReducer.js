@@ -9,7 +9,7 @@ import {
 } from '../actions/actionTypes'
 import calculateExpression from '../utils/calculateExpression'
 
-const initialExpressionState = [0, "×", 4, "+", 2, 0, "+", "-", 2, 0, "+", 1, "×", "-", 1, 2, 3, "-", 1, 2, 3, 0, "×", ".", 1]
+//const initialExpressionState = [0, "×", 4, "+", 2, 0, "+", "-", 2, 0, "+", 1, "×", "-", 1, 2, 3, "-", 1, 2, 3, 0, "×", ".", 1]
 //const initialExpressionState = [0, '.', 2, '+', 2, 2, '.', 2, '+', '.', 2]
 //const initialExpressionState = ["-", 2, 4, 6];
 const clearExpression = [];
@@ -69,7 +69,7 @@ function getNewState(state,key){
 }
 
 
-function expressionReducer(state = initialExpressionState, action){
+function expressionReducer(state = clearExpression, action){
     switch(action.type){
         case ADD_TO_EXPRESSION:
             return getNewState(state, action.payload.key)
