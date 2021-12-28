@@ -22,7 +22,7 @@ function NumPad({
 
     useEffect(()=>{
         sendExpToDisplay(expressionState)
-    }, [expressionState])
+    }, [expressionState, sendExpToDisplay])
 
 
     return(
