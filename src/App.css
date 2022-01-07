@@ -1,87 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
-*{
-  box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
-body{
-  background-color: aquamarine;
-  font-family: 'Orbitron', sans-serif;
+body {
+	background-color: aquamarine;
+	font-family: 'Orbitron', sans-serif;
 }
 
-#calc-container{
-  display: flex;
-  flex-direction: column;
-  margin-top: 5vh;
-  background-color: grey;
+#calc-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5vh;
+	background-color: grey;
 }
 
-
-
-.container{
-  display: flex;
-  justify-content: space-evenly;
+.container {
+	display: flex;
+	justify-content: space-evenly;
 }
 
-#display{
-  font-size: 2rem;
-  min-height: 3.2rem;
-  padding: 5px;
-  background-color: black;
-  border-radius: 3px;
-  color:blanchedalmond;
-  flex: 90% 1 1;
+#display {
+	font-size: 2rem;
+	min-height: 3.2rem;
+	padding: 5px;
+	background-color: black;
+	border-radius: 3px;
+	color: blanchedalmond;
+	flex: 90% 1 1;
 }
 
-#numpad{
-  padding: 5px;
-  justify-content: left;
-  columns: 3;
-  column-gap: 0;
-  flex-wrap: wrap;
-  flex-grow: 2;
+#numpad {
+	padding: 5px;
+	justify-content: left;
+	columns: 3;
+	column-gap: 0;
+	flex-wrap: wrap;
+	flex-grow: 2;
 }
 
-#operators{
-  display: flex;
-  padding: 5px;
-  flex-direction: column;
-  flex-grow: 1;
+#operators {
+	display: flex;
+	padding: 5px;
+	flex-direction: column;
+	flex-grow: 1;
 }
 
-#top-button-bar{
-  padding: 5px 5px 0 5px;
-  display:flex;
+#top-button-bar {
+	padding: 5px 5px 0 5px;
+	display: flex;
 }
 
-
-
-.button{
-  cursor: pointer;
-  font-size: 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 31%;
-  margin: 0 2px 2px 2px;
-  height: 12.5vw;
-  text-align: center;
-  background-color: rgba(66,66,66,0.2);
+.button {
+	cursor: pointer;
+	font-size: 1.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 31%;
+	margin: 0 2px 2px 2px;
+	height: 12.5vw;
+	text-align: center;
+	background-color: rgba(66, 66, 66, 0.2);
 }
 
-.top-btn{
-  min-width: auto;
-  flex-grow: 1;
+.top-btn {
+	min-width: auto;
+	flex-grow: 1;
 }
 
-@media (min-width: 660px){
-  #calc-container{
-    margin-top: 20vh;
-    margin-left: auto;
-    margin-right: auto;
-    width:600px;
-  }
-  .button{
-    height: 88px;
-  }
+@media (min-width: 660px) {
+	#calc-container {
+		margin-top: 20vh;
+		margin-left: auto;
+		margin-right: auto;
+		width: 600px;
+	}
+	.button {
+		height: 88px;
+	}
 }
