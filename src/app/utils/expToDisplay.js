@@ -2,11 +2,11 @@ export default function expToDisplay(expressionState) {
 	let display = expressionState.join('');
 
 	display = display.replace(/([+\-÷×])(-?)(\.\d+)/g, '$1$20$3');
-	display = display.replace(/([+\-÷×])(-\d+)/g, '$1($2)');
+	display = display.replace(/([+\-÷×])(-\d+.?\d+?)/g, '$1($2)');
 	//display = display.replace(/(\d)([+\-÷×])(-)?$/, '$1 $2 $3');
 
-	while (display.match(/(\d)([+\-÷×])(\(?-?\d)/))
-		display = display.replace(/([\d)])([+\-÷×])(\(?-?\d)/, '$1 $2 $3');
+	display = display.replace(/(^[+÷×])/, '');
+	display = display.replace(/(\d|\))([+\-÷×])/g, '$1 $2 ');
 
 	// let display = [];
 	// let tempDisplay = [];
