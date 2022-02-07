@@ -1,7 +1,7 @@
 import { EXPRESSION_TO_DISPLAY } from '../actions/actionTypes';
 import expToDisplay from '../utils/expToDisplay';
 
-const initialState = 'enter your expression';
+const initialState = '';
 
 function displayReducer(state = initialState, action) {
 	switch (action.type) {

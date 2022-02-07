@@ -14,6 +14,7 @@ body {
 	flex-direction: column;
 	margin-top: 5vh;
 	background-color: grey;
+	min-width: 400px;
 }
 
 .container {
@@ -22,13 +23,21 @@ body {
 }
 
 #display {
-	font-size: 2rem;
-	min-height: 3.2rem;
+	font-size: 2em;
+	height: 2em;
 	padding: 5px;
 	background-color: black;
 	border-radius: 3px;
 	color: blanchedalmond;
-	flex: 90% 1 1;
+	border: 5px solid grey;
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#display span {
+	flex-shrink: 1;
 }
 
 #numpad {
@@ -60,7 +69,7 @@ body {
 	justify-content: center;
 	min-width: 31%;
 	margin: 0 2px 2px 2px;
-	height: 12.5vw;
+	height: 80px;
 	text-align: center;
 	background-color: rgba(66, 66, 66, 0.2);
 }
@@ -70,7 +79,7 @@ body {
 	flex-grow: 1;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 600px) {
 	#calc-container {
 		margin-top: 20vh;
 		margin-left: auto;

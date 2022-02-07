@@ -5,7 +5,7 @@ import {
 	CLEAR_EXPRESSION,
 } from '../actions/actionTypes';
 
-let initialState = '';
+let initialState = 'eloelo';
 
 export default function displayManagerReducer(state = initialState, action) {
 	switch (action.type) {
